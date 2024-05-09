@@ -28,7 +28,7 @@ for element in soup.find_all("td"):
 #print(explorationdubloc)
 
 
-#print(valeurs_classes)
+print(valeurs_classes)
 print(len(valeurs_classes))
 #print(valeurs_classes[21])
 
