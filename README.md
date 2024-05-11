@@ -23,4 +23,37 @@ par l'ONSS (via Data gov) concernant les Statistiques emploi classées par lieu 
             statbel.gov
             https://statbel.fgov.be/fr/themes/datalab/datalab-census-enseignement
             => Il faudra rassembler ces données par province ou arrondissement administratif.
-    2) 
+
+Les données liées à l'enseignement ne sont manifestement pas accessibles ou mal collectées.
+
+Plan b : scraping du bestiaire du site donjondudragon
+
+Ok, ça marche, mais c'est assez peu analysable. Je vais peut-être essayer de trouver quelque chose d'un peu plus professionnalisant
+
+Plan c : l'accès et la place de la culture dans la ville de Bruxelles
+
+Est-ce que chacun des sept quartiers qui composent la ville de Bruxelles est égal du point de vue de l'accès à la culture ?
+
+Critères retenus pour définir la culture : 
+- musées
+- cinémas
+- bibliothèques
+- lieux culturels
+on laisse tomber les théâtres et le parcours bd
+
+Critères retenus pour la culture dans l'espace public: 
+- street art ?
+- patrimoine artistique de voiries ?
+
+Critères retenus pour définir l'accès :
+- arrêts stib
+- parkings publics
+- gares sncb
+- parking bus scolaires
+- distributeurs bancaires ?
+
+problème : comment localiser par quartier ?
+
+commençons par un truc simple : les musées par rapport aux arrêts stib + gares sncb / quartiers de bxl
+
+
