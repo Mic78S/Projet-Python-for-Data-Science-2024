@@ -67,6 +67,6 @@ pour les critères "accès", ça va être plus compliqué
 - arrêts stib et tec plus ou moins ok
 - pour les gares sncb, il va falloir scraper le site de la sncb
 - pour les parkings publics ou bus scolaires, les données n'existent que pour Bxl + Liège et Namur sous une forme différente (stationnements en général)
-
+- les distributeurs bancaires
 
 
