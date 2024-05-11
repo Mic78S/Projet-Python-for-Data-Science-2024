@@ -52,8 +52,21 @@ Critères retenus pour définir l'accès :
 - parking bus scolaires
 - distributeurs bancaires ?
 
-problème : comment localiser par quartier ?
+problème : comment localiser par quartier ? 
 
 commençons par un truc simple : les musées par rapport aux arrêts stib + gares sncb / quartiers de bxl
+=> pas du tout simple : créer une map avec des quartiers en fonction de leurs coordonnées gps, c'est très compliqué
+=> je dois déjà importer une map de bruxelles (essayer de la créer à partir d'openstreetmaps), puis créer un geodataframe qui permettra de spotter les localisations sur la map
+
+Même projet mais sur les régions wallonie + bxl en espérant trouver les données par code postal
+
+Pour les critères "culture", j'ai tout ce que je veux
+pour la culture dans l'espace public, j'oublie mais je ne savais pas trop comment l'utiliser de toute façon
+
+pour les critères "accès", ça va être plus compliqué
+- arrêts stib et tec plus ou moins ok
+- pour les gares sncb, il va falloir scraper le site de la sncb
+- pour les parkings publics ou bus scolaires, les données n'existent que pour Bxl + Liège et Namur sous une forme différente (stationnements en général)
+
 
 
