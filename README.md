@@ -69,4 +69,6 @@ pour les critères "accès", ça va être plus compliqué
 - pour les parkings publics ou bus scolaires, les données n'existent que pour Bxl + Liège et Namur sous une forme différente (stationnements en général)
 - les distributeurs bancaires
 
+=> on remplace tout ça par un chiffre plus simple : les revenus fiscaux de la commune !
+
 
