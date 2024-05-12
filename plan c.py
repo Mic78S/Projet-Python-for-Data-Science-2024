@@ -1,25 +1,41 @@
 import requests
+import json
 import pandas as pd
 from pathlib import Path
 import matplotlib.pyplot as plt
 import matplotlib
 
-# les fichiers csv de la ville de bxl utilisent le ; comme séparateur
+root = 20
+
+liste_musees = []
+
+#api_musees = requests.get()
+
+api_musees = "https://www.odwb.be/api/explore/v2.1/catalog/datasets/adresses-des-musees-reconnus-en-communaute-francaise/records?limit={root}"
+
+while root <= 100:
+    data = requests.get("https://www.odwb.be/api/explore/v2.1/catalog/datasets/adresses-des-musees-reconnus-en-communaute-francaise/records?limit={root}")
+    liste_musees = liste_musees + list(data.json())
+    root += 20
 
 
 
-file_path = Path(__file__).parent
 
-col_names = ["Catégorie", "Dénomination", "Adresse", "Code postal", "Localité", "Téléphone", "Courriel", "Site web", "Statut juridique", "Province", "Bassin de vie FWB", "BCE", "Reconnaissance FWB", "Catégorie de reconnaissance", "Géolocalisation"]
+#while True:
+#    data = requests.get("https://www.odwb.be/api/explore/v2.1/catalog/datasets/adresses-des-musees-reconnus-en-communaute-francaise/records?limit={root}")
+ #   result = json.loads(data.text)
+ #   liste_musees.append(result) 
+  #  if root == 100:
+  #      break
+  #  else:
+  #      root += 20
 
-data = pd.read_csv(Path(file_path, "adresses-des-musees-reconnus-en-communaute-francaise.csv", sep=" ;", names=col_names, on_bad_lines="Skip"))["Dénomination", "Code postal", "Province"]
+print(liste_musees)
 
-print(data)
+#result = json.loads(api_musees.text)
 
-df = pd.DataFrame({
-    
-})
 
+#print(result)print(type(result))
 
 
 
